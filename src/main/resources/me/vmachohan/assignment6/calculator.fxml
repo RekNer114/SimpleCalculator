@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="614.0" prefWidth="416.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.vmachohan.assignment6.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label fx:id="welcomeText" />
+   <Pane prefHeight="200.0" prefWidth="200.0">
+      <children>
+         <TextField fx:id="out" alignment="BOTTOM_CENTER" layoutY="81.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="72.0" prefWidth="376.0" />
+         <TextField fx:id="out1" alignment="BOTTOM_CENTER" editable="false" layoutY="5.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="72.0" prefWidth="376.0">
+            <font>
+               <Font size="10.0" />
+            </font></TextField>
+      </children></Pane>
+   <GridPane gridLinesVisible="true" prefHeight="409.0" prefWidth="326.0" VBox.vgrow="ALWAYS">
+     <columnConstraints>
+       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+     </columnConstraints>
+     <rowConstraints>
+         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+     </rowConstraints>
+      <children>
+         <Button alignment="CENTER" contentDisplay="TEXT_ONLY" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#onNumberPartPressed" prefHeight="82.0" prefWidth="97.0" text="9" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+         <Button alignment="CENTER" contentDisplay="TEXT_ONLY" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#onNumberPartPressed" prefHeight="82.0" prefWidth="97.0" text="8" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+          <Button alignment="CENTER" contentDisplay="TEXT_ONLY" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#onNumberPartPressed" prefHeight="82.0" prefWidth="97.0" text="3" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+          <Button alignment="CENTER" contentDisplay="TEXT_ONLY" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#onNumberPartPressed" prefHeight="82.0" prefWidth="97.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+          <Button alignment="CENTER" contentDisplay="TEXT_ONLY" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#onNumberPartPressed" prefHeight="82.0" prefWidth="97.0" text="1" GridPane.rowIndex="3" />
+          <Button alignment="CENTER" contentDisplay="TEXT_ONLY" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#onNumberPartPressed" prefHeight="82.0" prefWidth="97.0" text="2" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+          <Button alignment="CENTER" contentDisplay="TEXT_ONLY" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#onNumberPartPressed" prefHeight="82.0" prefWidth="97.0" text="6" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+          <Button alignment="CENTER" contentDisplay="TEXT_ONLY" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#onNumberPartPressed" prefHeight="82.0" prefWidth="97.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+          <Button alignment="CENTER" contentDisplay="TEXT_ONLY" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#onNumberPartPressed" prefHeight="82.0" prefWidth="97.0" text="4" GridPane.rowIndex="2" />
+          <Button alignment="CENTER" contentDisplay="TEXT_ONLY" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#onNumberPartPressed" prefHeight="82.0" prefWidth="97.0" text="7" GridPane.rowIndex="1" />
+          <Button alignment="CENTER" contentDisplay="TEXT_ONLY" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#onFloatingPointPressed" prefHeight="82.0" prefWidth="97.0" text="," GridPane.columnIndex="2" GridPane.rowIndex="4" />
+          <Button alignment="CENTER" contentDisplay="TEXT_ONLY" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#appendOperator" prefHeight="82.0" prefWidth="97.0" text="*" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+          <Button alignment="CENTER" contentDisplay="TEXT_ONLY" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#appendOperator" prefHeight="82.0" prefWidth="97.0" text="+" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+          <Button alignment="CENTER" contentDisplay="TEXT_ONLY" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#appendOperator" prefHeight="82.0" prefWidth="97.0" text="-" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+          <Button alignment="CENTER" contentDisplay="TEXT_ONLY" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#appendOperator" prefHeight="82.0" prefWidth="97.0" text="/" GridPane.columnIndex="3" />
+          <Button alignment="CENTER" contentDisplay="TEXT_ONLY" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#onEqualsPressed" prefHeight="82.0" prefWidth="97.0" text="=" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+          <Button alignment="CENTER" contentDisplay="TEXT_ONLY" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="82.0" prefWidth="97.0" text="\%" GridPane.columnIndex="1" />
+          <Button alignment="CENTER" contentDisplay="TEXT_ONLY" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#onSwapSignPressed" prefHeight="82.0" prefWidth="97.0" text="+/-" GridPane.rowIndex="4" />
+          <Button alignment="CENTER" contentDisplay="TEXT_ONLY" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#onDeletePressed" prefHeight="82.0" prefWidth="97.0" text="DEL" />
+          <Button alignment="CENTER" contentDisplay="TEXT_ONLY" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#onClearPressed" prefHeight="82.0" prefWidth="97.0" text="CLEAR" GridPane.columnIndex="2" />
+      </children>
+   </GridPane>
+</VBox>
