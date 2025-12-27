@@ -9,7 +9,7 @@ import javafx.scene.control.TextField;
 
 
 
-public class HelloController {
+public class CalculatorController {
 
     @FXML
     TextField out;
