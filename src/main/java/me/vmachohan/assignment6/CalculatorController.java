@@ -70,6 +70,7 @@ public class CalculatorController {
 
     public void onSwapSignPressed(ActionEvent actionEvent) {
         calculatorState.swapSign();
+        refresh();
     }
 
     public void refresh(){
